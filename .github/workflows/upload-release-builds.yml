@@ -41,13 +41,13 @@ jobs:
         - os: ubuntu-22.04
           shell: bash
           build-type: Release
-        - os: macos-13
+        - os: macos-14
           shell: bash
           build-type: Debug
-        - os: macos-13
+        - os: macos-14
           shell: bash
           build-type: RelWithDebInfo
-        - os: macos-13
+        - os: macos-14
           shell: bash
           build-type: Release
     defaults:
