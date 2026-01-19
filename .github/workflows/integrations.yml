@@ -157,6 +157,9 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}/dist/${{ matrix.config.site-packages }}
 
       - name: Test TraitGen (C++)
+        # TODO(DF): Re-enable on all platforms once TraitGen issue is
+        #  resolved: https://github.com/OpenAssetIO/OpenAssetIO-TraitGen/issues/123
+        if: matrix.config.os == 'ubuntu-22.04'
         run: |
           python -m pytest -v --capture=tee-sys -m ctest external/TraitGen
         env:
