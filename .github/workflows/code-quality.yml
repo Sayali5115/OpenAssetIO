@@ -160,7 +160,7 @@ jobs:
 
   abi-check:
     name: ABI diff check
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     # We must test ABI on a consistent platform. So choose our VFX
     # reference platform compatible Docker image, which we have
     # pre-installed libabigail into for performing the ABI diff checks.
