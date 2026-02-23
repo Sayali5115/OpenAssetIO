@@ -63,7 +63,7 @@ to resolve for, the second is the entity reference to resolve:
 
 ```bash
 python ./simpleResolver.py animal,named bal:///cat
-python ./simpleResolver.py locatableContent bal:///cat
+python ./simpleResolver.py examplelocatableContent bal:///cat
 ```
 
 ### Tips and tricks
@@ -87,7 +87,7 @@ python ./simpleResolver.py named bal:///cat | jq -r '.named.name'
 ASCII art for the win!
 
 ```bash
-python ./simpleResolver.py locatableContent bal:///cat | jq -r '.locatableContent.url' | xargs jp2a
+python ./simpleResolver.py examplelocatableContent bal:///cat | jq -r '.examplelocatableContent.url' | xargs jp2a
 ```
 
 [^1]: Manually installing BAL:
